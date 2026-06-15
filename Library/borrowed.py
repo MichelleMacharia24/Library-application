@@ -1,0 +1,10 @@
+class Borrowed():
+
+    def __init__(self, record_id, user_id, book_id, borrow_date, return_date):
+        self.record_id = record_id
+        self.user_id = user_id
+        self.book_id = book_id
+        self.borrow_date = borrow_date
+        self.return_date = return_date
+
+        
