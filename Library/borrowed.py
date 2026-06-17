@@ -29,7 +29,7 @@ class Borrowed():
 
         self.return_date = return_date
 
-    def check_returned(self, return_date):
+    def check_returned(self):
 
         """Checks if a book has been returned."""
 
