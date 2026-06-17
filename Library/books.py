@@ -44,7 +44,8 @@ class Books():
 
 book1 = Books(10, "Python rules", "Michelle Macharia", True)       
 
-print(book1.book_info())
+print(book1.book_info(),book1.book_borrowed())
+
 
 
 
