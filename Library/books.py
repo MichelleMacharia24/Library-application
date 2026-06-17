@@ -31,6 +31,8 @@ class Books():
 
         if self.available == True:
             print(f"{self.title} has been returned.")
+        else:
+            print(f"{self.title} has not been returned.")
 
     def update_book(self, new_title, new_author):
 
