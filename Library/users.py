@@ -43,9 +43,6 @@ class Users():
 
         return len(self.borrowed_books)
 
-user1 = Users(22, "Bob John", "bob.john@python.com")
-
-print(user1.user_info())
 
     
 
