@@ -1,6 +1,7 @@
 from users import Users
 from books import Books
 from borrowed import Borrowed
+from library import Library
 
 user1 = Users(1, "Alice Wonder", "alicewonder@python.com")
 
@@ -19,3 +20,10 @@ record1.close_record("01/02/2027")
 
 record1.record_info()
 print(record1.check_returned())
+
+library = Library()
+
+library.new_book(book1)
+library.new_book(book2)
+
+library.borrow_book(user1, book1)
