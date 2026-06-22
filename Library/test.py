@@ -5,8 +5,9 @@ from library import Library
 
 user1 = Users(1, "Alice Wonder", "alicewonder@python.com")
 
-book1 = Books(101, "Python Rocks", "John Doe", True)
-book2 = Books(102, "Data Structures", "Jazz King", True)
+book1 = Books(101, "Python Rocks", "John Doe")
+book2 = Books(102, "Data Structures", "Jazz King")
+book3 = Books(103, "Hack to IT", "Paul Pages")
 
 user1.borrow_book(book1)
 user1.borrow_book(book2)
@@ -25,5 +26,6 @@ library = Library()
 
 library.new_book(book1)
 library.new_book(book2)
+library.new_book(book3)
 
-library.borrow_book(user1, book1)
+library.search_books("hh")
