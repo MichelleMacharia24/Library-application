@@ -1,1 +1,4 @@
 book_id,title,author,available
+101,Python Rocks,John Doe,True
+102,Data Structures,Jane Smith,True
+103,Algorithms,Alan Brown,True
