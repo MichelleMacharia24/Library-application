@@ -1,1 +1,2 @@
 record_id,user_id,book_id,borrow_date,return_date
+1,1,101,2026-01-01,
