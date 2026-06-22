@@ -1,6 +1,6 @@
 class Books():
 
-    def __init__(self, book_id, title, author, available):
+    def __init__(self, book_id, title, author):
         self.book_id = book_id
         self.title = title
         self.author = author
@@ -16,20 +16,22 @@ class Books():
               f"Availability: {self.available}")
         
 
-    def book_borrowed(self):
+    def borrow_book(self):
 
         """Marks a book as borrowed."""
 
         if self.available == True:
-            print(f"{self.title} is available")
+            self.available = False
+            print(f"{self.title} has been succesffully borrowed.")
         else:
             print(f"{self.title} is already borrowed.")
 
-    def book_returned(self):
+    def return_book(self):
 
         """Marks a book as returned."""
 
-        if self.available == True:
+        if self.available == False:
+            self.available = True
             print(f"{self.title} has been returned.")
         else:
             print(f"{self.title} has not been returned.")
@@ -42,13 +44,3 @@ class Books():
         self.author = new_author
 
         print("Book details updated.")
-
-
-book1 = Books(10, "Python rules", "Michelle Macharia", True)       
-
-print(book1.book_info(),book1.book_borrowed())
-
-
-
-
-
