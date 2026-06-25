@@ -24,12 +24,12 @@ To return a book:
 Select option 4 and enter a valid book ID. The book will become available again.
 
 ## Key features
-View all the library books
-Add new books to library
-Borrow library books
-Return library books
-Save or load data from csv files
-Use menu-driven user interface
+- View all the library books
+- Add new books to library
+- Borrow library books
+- Return library books
+- Save or load data from csv files
+- Use menu-driven user interface
 
 ## Key files
 ### Main.py
