@@ -25,35 +25,37 @@ class Library():
         else:
             print("Book is not in the library.")
 
-    def borrow_book(self, user, book):
+    def borrow_book(self, book_id):
 
         """Allows users to borrow books from the library."""
 
-        if book in self.books:
+        for book in self.books:
+
+         if book_id == book.book_id:
 
             if book.available:
                 book.borrow_book()
-                user.borrow_book(book)
 
-                print(f"{user.name} has successfully borrowed {book.title}.")
+                print(f"Book has successfully been borrowed.")
 
             else:
                 print(f"{book.title} has already been borrowed.")
             
-        else:
+         else:
             print("This book is not in the library.")
 
-    def return_book(self, user, book):
+    def return_book(self, book_id):
          
          """Allows users to return books to the library."""
+
+         for book in self.books:
          
-         if book in self.books:
+          if book_id == book.book_id:
              
              if not book.available:
                 book.return_book()
-                user.return_book(book)
 
-                print(f"{user.name} has successfully returned {book.title}.")
+                print(f"Book has successfully been returned.")
              
              else:
                 print(f"{book.title} is not currently borrowed.")
