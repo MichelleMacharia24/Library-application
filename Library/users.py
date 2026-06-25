@@ -42,10 +42,3 @@ class Users():
         """Counts the number of books borrowed by the user."""
 
         return len(self.borrowed_books)
-
-
-    
-
-
-
-
