@@ -36,16 +36,23 @@ while True:
     elif option == "3":
         print("--- BORROW A BOOK ---")
 
-        book_id = int(input("Enter book ID: "))
-        library.borrow_book(book_id)
-        print("Book successfully borrowed!")
+        try:
+            book_id = int(input("Enter book ID: "))
+            library.borrow_book(book_id)
+
+        except ValueError:
+            print("Please enter a valid book ID.")
+
 
     elif option == "4":
         print ("--- RETURN A BOOK ---")
 
-        book_id = int(input("Enter book ID: "))
-        library.return_book(book_id)
-        print("Book successfully returned!")
+        try:
+            book_id = int(input("Enter book ID: "))
+            library.return_book(book_id)
+        
+        except ValueError:
+            print("Please enter a valid book ID.")
     
     elif option == "5":
         save_books(library.books)
