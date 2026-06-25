@@ -3,7 +3,7 @@ from books import Books
 from users import Users
 from borrowed import Borrowed
 
-def save_books(books, filename="books.csv"):
+def save_books(books, filename="Library/books.csv"):
 
     """Saves books into the csv file."""
 
@@ -20,7 +20,7 @@ def save_books(books, filename="books.csv"):
                 book.available
             ])
 
-def load_books(filename="books.csv"):
+def load_books(filename="Library/books.csv"):
 
     """Loads books into library from csv."""
 
@@ -38,7 +38,7 @@ def load_books(filename="books.csv"):
     return books 
 
 
-def save_users(users, filename="users.csv"):
+def save_users(users, filename="Library/users.csv"):
 
     """Saves users into CSV file."""
 
@@ -55,7 +55,7 @@ def save_users(users, filename="users.csv"):
             ])
 
 
-def load_users(filename="users.csv"):
+def load_users(filename="Library/users.csv"):
 
     """Loads users from CSV and recreates User objects."""
 
@@ -73,7 +73,7 @@ def load_users(filename="users.csv"):
     return users
 
 
-def save_records(records, filename="records.csv"):
+def save_records(records, filename="Library/records.csv"):
 
     """Saves borrowing records into CSV."""
 
@@ -92,7 +92,7 @@ def save_records(records, filename="records.csv"):
             ])
 
 
-def load_records(filename="records.csv"):
+def load_records(filename="Library/records.csv"):
     """Loads borrowing records from CSV."""
 
     records = []
