@@ -4,3 +4,4 @@ book_id,title,author,available
 103,Algorithms,Alan Brown,True
 200,Michelle Python,Michelle Macharia,True
 201,Grace Anne,Gisma Data Science,True
+199,Summer blues,Michelle Macharia,False
