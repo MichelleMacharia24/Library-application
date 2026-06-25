@@ -1,6 +1,6 @@
 # Library Application
 # Done by: Michelle Wangechi Macharia
-Final individual project for B100A Python Programming course.
+## Final individual project for B100A Python Programming course.
 
 ## Purpose
 The purpose of this application is to allow users to borrow and return books 
